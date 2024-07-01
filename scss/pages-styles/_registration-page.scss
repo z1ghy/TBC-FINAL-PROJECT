@@ -1,0 +1,236 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.registration-form {
+    font-family: 'Open Sans', sans-serif;
+    color: #3a3c47;
+    line-height: 1.6;
+    @include goFlex (column,center,center,wrap,center);
+    @media (max-width:400px){
+        max-width: 95%;
+    }
+    
+    h2 {
+        font-size: 100px;
+        font-family: "Caveat", sans-serif;
+        @include goFlex (row,center,center,wrap,center);
+        @media (max-width:632px) {
+            font-size: 50px;
+        }
+        span {
+            color: red;
+            
+        }
+    }
+
+h1 {
+    margin-top: 48px;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+  }
+
+  #username, #email, #phone, #password {
+    font-family: Caveat;
+    font-size: 25px;
+    font-weight: 700;
+    color: red;
+  }
+
+  .input-field select {
+    width: 170px;
+    margin-bottom: 20px;
+    
+  }
+
+  
+  form {
+    background: #fff;
+    max-width: 100%;
+    width: 90%;
+    padding: 58px 44px;
+    border: 1px solid #ff000056;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.411);
+            box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.411);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    
+  }
+  
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .row label {
+    font-size: 13px;
+    color: #8086a9;
+  }
+  
+  .row input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 13px;
+    border: 1px solid #00000028;
+    border-radius: 4px;
+    font-size: 16px;
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  .row input:focus {
+    outline: none;
+    -webkit-box-shadow: inset 2px 2px 5px 0 rgb(255, 0, 0);
+            box-shadow: inset 2px 2px 5px 0 rgb(255, 0, 0);
+  }
+  
+  .row input::-webkit-input-placeholder {
+    color: #C8CDDF;
+  }
+  
+  .row input::-moz-placeholder {
+    color: #C8CDDF;
+  }
+  
+  .row input:-ms-input-placeholder {
+    color: #C8CDDF;
+  }
+  
+  .row input::-ms-input-placeholder {
+    color: #C8CDDF;
+  }
+  
+  .row input::placeholder {
+    color: #C8CDDF;
+  }
+
+
+  .checkbox-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.checkbox-container label {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+}
+
+.checkbox-container input[type='checkbox'] {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-container label::before {
+    content: '';
+    width: 1em;
+    height: 1em;
+    border-radius: .15em;
+    margin-right: .5em;
+    border: .05em solid black;
+}
+
+.checkbox-container label:hover::before,
+.checkbox-container input[type='checkbox']:hover + label::before {
+    background-color: #00ff6a34;
+}
+
+
+
+.checkbox-container input[type='checkbox']:disabled + label,
+.checkbox-container input[type='checkbox']:disabled {
+    color: #aaa;
+    cursor: default;
+}
+
+.checkbox-container input[type='checkbox']:checked + label::before {
+    content: '\002714';
+    background-color: #27AE60;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+}
+
+.checkbox-container input[type='checkbox']:disabled + label::before {
+    background-color: #ccc;
+    border-color: #999;
+}
+
+.shelter-icon-gap label {
+    gap: 10px;
+}
+
+    
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #c31515;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+    -webkit-transition: background 0.5s ease-out;
+    -o-transition: background 0.5s ease-out;
+    transition: background 0.5s ease-out;
+  }
+  
+  button:hover {
+    background: #55D3AC;
+  }
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    
+  }
+
+  p:hover {
+    color: rgba(255, 0, 0, 0.452);
+  }
+
+
+  
+}

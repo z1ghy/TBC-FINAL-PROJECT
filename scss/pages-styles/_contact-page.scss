@@ -1,0 +1,92 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.contact-page-header {
+  margin-bottom: 0px ;
+}
+
+
+.contact-page { 
+  
+    
+  h2 {
+    margin: 0;
+    color: #ff0000;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 3rem;
+    font-family: "Caveat", sans-serif;
+  }
+
+  
+  form{
+    width: 90%;
+    @include goFlex (column,center,center,wrap,center);
+  }
+  
+  form label{
+    font-size: 1.5rem;
+    font-family: "Caveat",sans-serif;
+    margin-bottom: 5px;
+    
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    font-size: 1.5rem;
+    font-family: "Oswald",sans-serif;
+    border-radius: 30px;
+    
+    
+  }
+  input[type="text"], input[type="email"], textarea {
+    margin: 0 0 1em;
+    border: 2px solid #ff00003d;
+    outline: none;
+  }
+  
+  textarea {
+    height: 10em;
+  }
+  input[type="submit"], button {
+    background: #640101;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  input[type="submit"]:hover, button:hover {
+    background: #55D3AC;
+  }
+
+  ul {
+    gap: 10px;
+    @include goFlex (column,flex-start,flex-start,nowrap,flex-start);
+  }
+
+  li {
+    gap: 5px;
+    @include goFlex (row,flex-start,flex-start,nowrap,flex-start);
+  }
+
+  .contact-page-info {
+    margin-bottom: 100px;
+  }
+
+
+  .contact-page .red-arrow {
+    margin-bottom: 100px;
+  }
+  
+  }
+
+ 
+  
+  

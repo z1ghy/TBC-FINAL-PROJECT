@@ -1,0 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import '../scss/pages-styles/reset';
+@import '../scss/pages-styles/variables';
+@import '../scss/pages-styles/mixins';
+
+
+@import 'pages-styles/landing-page';
+@import 'pages-styles/registration-page';
+@import 'pages-styles/contact-page';
+@import 'pages-styles/about-page';
+@import 'pages-styles/services-page';
+@import 'pages-styles/news-page';
+@import 'pages-styles/sign-in-page';

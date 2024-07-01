@@ -1,0 +1,273 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+.about-page {
+  h5 {
+      color: black;
+      font-size: 100px;
+      font-family: "Caveat",sans-serif;
+      margin-top: 100px;
+      @media (max-width:490px) {
+          font-size: 69px;
+      }
+      
+      span {
+          color: red;
+      }
+  }
+
+  .red-arrow {
+      margin-bottom: 30px;
+  }
+  
+background: rgb(244,225,225);
+background: -webkit-gradient(linear, left bottom, left top, from(rgba(244,225,225,1)), color-stop(50%, rgba(255,255,255,0)), to(rgba(244,225,225,1)));
+background: -o-linear-gradient(bottom, rgba(244,225,225,1) 0%, rgba(255,255,255,0) 50%, rgba(244,225,225,1) 100%);
+background: linear-gradient(0deg, rgba(244,225,225,1) 0%, rgba(255,255,255,0) 50%, rgba(244,225,225,1) 100%);
+  .we-are-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      width: 100%;
+      height: 900px;
+    }
+    
+    
+    
+    @media screen and (max-width: 860px) {
+      .we-are-block {
+        height: 2200px;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
+      .we-are-block {
+        height: 2300px;
+      }
+    }
+    
+    #about-us-section {
+      background: #ff00003b;
+      width: 100%;
+      height: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative;
+      border-radius: 100px;
+    }
+    
+    @media screen and (max-width: 860px) {
+      #about-us-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        height: 60%;
+      }
+    }
+    
+    .about-us-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    @media screen and (max-width: 860px) {
+      .about-us-image {
+        position: relative;
+        width: 100%;
+        height: 45%;
+      }
+    }
+    
+    
+    
+   
+    
+    .about-us-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      width: 50%;
+      height: 100%;
+      margin-right: 750px;
+      z-index: 2;
+      border-radius: 100px;
+
+      p {
+          line-height: 25px;
+          font-family: "Oswald";
+      }
+
+      span {
+          color: red;
+      }
+
+      
+    }
+    
+
+
+    
+    @media screen and (max-width: 1353px) {
+      .about-us-info {
+        margin-right: 400px;
+        width: 70%;
+        background: rgb(0 0 0 / 50%);
+        padding: 0px 25px 0px 0px;
+      }
+    }
+    
+    @media screen and (max-width: 1238px) {
+      .about-us-info {
+        margin-right: 229px;
+        width: 100%;
+      }
+    }
+    
+    @media screen and (max-width: 1111px) {
+      .about-us-info {
+        margin-right: 229px;
+      }
+    }
+    
+    @media screen and (max-width: 910px) {
+      .about-us-info {
+        margin-right: 229px;
+      }
+    }
+    
+    @media screen and (max-width: 860px) {
+      .about-us-info {
+        margin: 0px 0px 0px 0px !important;
+        padding: 0px 20px 0px 20px !important;
+        width: 100%;
+        height: 55%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+      }
+    }
+    
+    @media screen and (max-width: 747px) {
+      .about-us-info {
+        height: 63%;
+      }
+    }
+    
+    .about-us-info h2 {
+      color: black;
+      font-size: 40pt;
+      text-align: right;
+      font-family: "Oswald",sans-serif;
+    }
+    
+    @media screen and (max-width: 860px) {
+      .about-us-info h2 {
+        text-align: center;
+      }
+    }
+    
+    .about-us-info p {
+      color: white;
+      font-size: 14pt;
+      text-align: center;
+      width: 100%;
+      @media (max-width:1600px) {
+          width: 95%;
+      }
+      @media (max-width:400px) {
+          width: 100%;
+          font-size: 16px;
+      }
+    }
+    
+    @media screen and (max-width: 860px) {
+      .about-us-info p {
+        text-align: center;
+      }
+    }
+    
+    .about-us-info a {
+      background-color: rgb(255, 0, 0);
+      color: #ffffff;
+      width: 180px;
+      text-align: center;
+      padding: 15px 0px 15px 0px;
+      font-size: 20px;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.596) 0px 20px 30px -10px;
+              box-shadow: rgba(255, 255, 255, 0.596) 0px 20px 30px -10px;
+      font-family: "Oswald",sans-serif;
+      
+    }
+    
+    .about-us-info a:hover {
+      background: #000000;
+      color: white;
+      -webkit-box-shadow: rgba(255, 0, 0, 0.623) 0px 22px 70px 4px;
+              box-shadow: rgba(255, 0, 0, 0.623) 0px 22px 70px 4px;
+    }
+
+   h4 {
+      color: black;
+      font-size: 60px;
+      font-family: "Caveat",sans-serif;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      @media (max-width:490px) {
+          font-size: 69px;
+      }
+   }
+    
+}
+
+.body-about-page footer {
+  margin-top: 0px;
+  
+}

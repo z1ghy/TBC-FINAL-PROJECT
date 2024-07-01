@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheltMe</title>
+
+    <link rel="icon" type="image/svg" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/cards/card-1/assets/css/card-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body class="body-services-page">
+
+
+    <header class="contact-page-header">
+
+        <div class="nav-container">
+
+            <nav class="nav-bar">
+
+                <ul>
+
+                    <li><i class="fa-solid fa-house"></i><a href="../index.html">Home</a></li>
+                    <li><i class="fa-solid fa-circle-info"></i><a href="About-page.html">About us</a></li>
+                    <li><i class="fa-solid fa-clipboard"></i><a href="Services-page.html">Services</a></li>
+                    <li><i class="fa-solid fa-earth-americas"></i><a href="News-page.html">News</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="Contact-page.html">Contact</a></li>
+                    <div class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </ul>
+
+
+
+            </nav>
+            <img src="../images/sheltmelogo.svg" alt="" width="130px">
+            <a href="../pages/Registration-page.html"> <button type="button">Account </button></a>
+
+
+
+
+
+        </div>
+        <div class="lang-menu">
+            <div class="selected-lang">
+                Georgia
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="de">German</a>
+                </li>
+                <li>
+                    <a href="#" class="en">English</a>
+                </li>
+                <li>
+                    <a href="#" class="fr">French</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </header>
+
+
+    <main class="services-main">
+
+        <h2 class="find-your-shelter animate__animated animate__zoomIn">Find your shelter here <i style="color: red;" class="bi bi-house-down"></i></h2>
+        <img class="red-arrow"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Red_Arrow_Up.svg/800px-Red_Arrow_Up.svg.png"
+                width="100" alt="arrow">
+
+        </div>
+
+        <div class="search">
+            <form class="search-form">
+
+                <input type="text" placeholder="Find Shelter">
+
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+
+        <div class="overlay" style="display:none"></div>
+        <div class="search-section">
+            <div class="container-fluid container-xl">
+                <div class="row main-content ml-md-0">
+                    <div class="sidebar col-md-3 px-0">
+                        <h1 class="border-bottom filter-header d-flex d-md-none p-3 mb-0 align-items-center">
+                            <span class="mr-2 filter-close-btn">
+                                X
+                            </span>
+                            Filters
+                            <span class="ml-auto text-uppercase">Reset Filters</span>
+                        </h1>
+                        <div class="sidebar__inner ">
+                            <div class="filter-body">
+                                <div>
+                                    <h2 class="border-bottom filter-title">Shelter Options <i style="color: black;" class="bi bi-house-gear"></i></h2>
+                                    <div class="mb-30 filter-options">
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="free" checked>
+                                            <label class="custom-control-label" for="free">Free</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="rent">
+                                            <label class="custom-control-label" for="rent">With Rent</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="night">
+                                            <label class="custom-control-label" for="nightr">For The Night</label>
+                                        </div>
+                                    </div>
+                                    <!--seating option end-->
+                                    <h2 class="font-xbold body-font border-bottom filter-title">City <i
+                                            class="fa-sharp fa-solid fa-city" style="color: #000000;"></i></h2>
+                                    <div class="mb-3 filter-options" id="cusine-options">
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Tbilisi" checked>
+                                            <label class="custom-control-label" for="Tbilisi">Tbilisi</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Batumi">
+                                            <label class="custom-control-label" for="Batumi">Batumi</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Kutaisi">
+                                            <label class="custom-control-label" for="Kutaisi">Kutaisi</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Rustavi">
+                                            <label class="custom-control-label" for="Rustavi">Rustavi</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Kobuleti">
+                                            <label class="custom-control-label" for="Kobuleti">Kobuleti</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Zugdidi">
+                                            <label class="custom-control-label" for="Zugdidi">Zugdidi</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Poti">
+                                            <label class="custom-control-label" for="Poti">Poti</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- cusine filters end -->
+                                    <h2 class="font-xbold body-font border-bottom filter-title">Price Range <span
+                                            style="color: rgb(0, 255, 0);">₾</span></h2>
+                                    <div class="mb-3 theme-clr xs2-font d-flex justify-content-between">
+                                        <span id="slider-range-value1">0₾</span>
+                                        <span id="slider-range-value2">500₾</span>
+                                    </div>
+                                    <div class="mb-30 filter-options">
+                                        <div>
+                                            <div id="slider-range">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="range" class="form-control-range" id="">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="border-bottom filter-title">Extra Services <i
+                                            class="fa-solid fa-bell-concierge" style="color: #000000;"></i></h2>
+                                    <div class="mb-3 filter-options" id="services-options">
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Breakfast" checked>
+                                            <label class="custom-control-label" for="Breakfast">Breakfast</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Lunch">
+                                            <label class="custom-control-label" for="Lunch">Lunch</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Dinner">
+                                            <label class="custom-control-label" for="Dinner">Dinner</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Cafe">
+                                            <label class="custom-control-label" for="Cafe">Cafe</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="Tea">
+                                            <label class="custom-control-label" for="Tea">Tea</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="other">
+                                            <label class="custom-control-label" for="other">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content col-md-9">
+                        <div class="d-flex justify-content-between border-bottom align-items-center">
+                            <h2 class="title">Shelters <i class="fa-solid fa-house-user" style="color: #000000;"></i>
+                            </h2>
+                            <div class="filters-actions">
+                                <div>
+                                    <button class="btn filter-btn d-md-none"><svg xmlns="http://www.w3.org/2000/svg"
+                                            class="mr-2" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                            <path d="M0 0h24v24H0V0z" fill="none" />
+                                            <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" />
+                                        </svg>
+                                        Filter</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+
+                                    <div class="dropdown position-relative sort-drop">
+                                        <button type="button"
+                                            class="btn btn-transparent dropdown-toggle body-clr p-0 py-1 sm-font fw-400 sort-toggle"
+                                            data-toggle="dropdown">
+                                            <span class="mr-2 d-md-none">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+                                                    width="24px" fill="#000000">
+                                                    <g>
+                                                        <path d="M0,0h24 M24,24H0" fill="none" />
+                                                        <path
+                                                            d="M7,6h10l-5.01,6.3L7,6z M4.25,5.61C6.27,8.2,10,13,10,13v6c0,0.55,0.45,1,1,1h2c0.55,0,1-0.45,1-1v-6 c0,0,3.72-4.8,5.74-7.39C20.25,4.95,19.78,4,18.95,4H5.04C4.21,4,3.74,4.95,4.25,5.61z" />
+                                                        <path d="M0,0h24v24H0V0z" fill="none" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                            <span class="d-md-inline-block ml-md-2 font-semibold">Newest First</span>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right p-0 no-caret">
+                                            <a class="dropdown-item selected" href="javascript:void(0)">Newest First</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">Lowest First</a>
+                                            <a class="dropdown-item" href="javascript:void(0)">Highest First</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-grid">
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://www.palacehomedecor.com/wp-content/uploads/2017/06/Interior-Design-Blog-1920x1080.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title free">Free</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--col-end-->
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://c4.wallpaperflare.com/wallpaper/850/684/35/interior-design-style-design-home-wallpaper-preview.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://w0.peakpx.com/wallpaper/31/188/HD-wallpaper-living-room-furniture-home-interior.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title free">Free</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://w0.peakpx.com/wallpaper/386/839/HD-wallpaper-living-room-home-interior-room-living.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://w0.peakpx.com/wallpaper/481/22/HD-wallpaper-beautiful-home-interior-with-water-view-design-architecture-homes-interiors.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title free">Free</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://c4.wallpaperflare.com/wallpaper/822/855/801/art-beautiful-design-home-wallpaper-preview.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://i.pinimg.com/originals/95/9d/ab/959dab9ab97b3d3011121fcd3300f861.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://e0.pxfuel.com/wallpapers/973/473/desktop-wallpaper-inside-luxury-homes-luxury-house-interior-cool-house.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://w0.peakpx.com/wallpaper/167/537/HD-wallpaper-cozy-modern-living-space-modern-architecture-home-decorating-rooms-interior-design.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?cs=srgb&dl=pexels-fotoaibe-1643383.jpg&fm=jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://resourcecenter.lennar.com/wp-content/uploads/2015/04/OLYMPIA-RIDGE-PLAN-6234-IMG-07-1920x1080.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://e0.pxfuel.com/wallpapers/400/825/desktop-wallpaper-modern-home-living-room-room-interior-design-property-wall-house-interior.jpg"
+                                        height="300px" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">100₾</h5>
+
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">City : Tbilisi</li>
+                                        <li class="list-group-item">Phone Number : +955 555 555 555</li>
+                                        <button class="details-button" type="button">More details...</button>
+                                    </ul>
+                                    <div class="card-body">
+                                        <img src="https://i.pinimg.com/originals/c5/6a/d1/c56ad191ecd2c53e6a2f9241ce8c4c02.png"
+                                            width="50px" alt="">
+                                        <a href="#" class="card-link">Live Chat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <div class="f-left-div">
+
+            <a href=""><img src="../images/sheltmelogo.svg" width="200px" alt="logo"></a>
+            <br> <br>
+            <a href=""><i class="fa-brands fa-instagram" style="color: #000000; font-size: 50px;"></i></a>
+            <a href=""><i class="fa-brands fa-facebook margin-left-right"
+                    style="color: #000000;font-size: 50px;"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter" style="color: #000000;font-size: 50px;"></i></a>
+            <hr width="210px">
+
+
+
+        </div>
+
+
+        <a href="https://www.tbceducation.ge/"><img
+                src="https://play-lh.googleusercontent.com/dm3fymv5TBQN375FMBGd9WesS-iEU9wrXqxvjVb5g4sJyaPmiWHGenNtJSqZ5FKi8vY"
+                width="300px" alt="TBCLOGO"></a>
+
+        <div class="f-right-div">
+
+            <div>
+                <nav>
+                    <ul>
+                        <h2>Company <i class="fa-regular fa-building" style="color: #000000;"></i></h2>
+                        <a href="#">
+                            <li>How we work?</li>
+                        </a>
+                        <a href="#">
+                            <li>Capital</li>
+                        </a>
+                        <a href="#">
+                            <li>Security</li>
+                        </a>
+                        <a href="#">
+                            <li>Shelters</li>
+                        </a>
+
+
+                    </ul>
+
+                </nav>
+
+            </div>
+            <div>
+
+
+                <nav>
+                    <ul>
+                        <h2>Supports <i class="fa-solid fa-handshake-angle" style="color: #000000;"></i></h2>
+                        <a href="#">
+                            <li>F.A.Q.</li>
+                        </a>
+                        <a href="#">
+                            <li>Help</li>
+                        </a>
+                        <a href="#">
+                            <li>Terms & Conditions</li>
+                        </a>
+                        <a href="#">
+                            <li>Privacy & Policy</li>
+                        </a>
+                    </ul>
+
+                </nav>
+
+            </div>
+            <div>
+
+                <nav>
+                    <ul>
+                        <h2>Contact Info <i class="fa-solid fa-circle-info" style="color: #000000;"></i></h2>
+                        <li id="white-li"> <i class="fa-solid fa-envelope"
+                                style="color: #ff0000;"></i>ShelterMe@gmail.com
+                        </li>
+                        <li id="white-li"><i class="fa-solid fa-phone" style="color: #ff0000;"></i></i>+ 995 574 856 599
+                        </li>
+                        <li id="white-li"><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i>თბილისი
+                            ვარკეთილი ქ.</li>
+                    </ul>
+
+
+                </nav>
+
+            </div>
+
+
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/308e00fcc5.js" crossorigin="anonymous"></script>
+</body>

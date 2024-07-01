@@ -1,0 +1,1907 @@
+@charset "UTF-8";
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NG+Modern:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+AU+QLD:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+@font-face {
+  font-family: geoFont;
+  src: url(../../fonts/georgianfont.ttf);
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: rgb(244, 225, 225);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(244, 225, 225)), color-stop(50%, rgba(255, 255, 255, 0)), to(rgb(244, 225, 225)));
+  background: -o-linear-gradient(bottom, rgb(244, 225, 225) 0%, rgba(255, 255, 255, 0) 50%, rgb(244, 225, 225) 100%);
+  background: linear-gradient(0deg, rgb(244, 225, 225) 0%, rgba(255, 255, 255, 0) 50%, rgb(244, 225, 225) 100%);
+}
+
+header {
+  height: 210px;
+  margin-bottom: 100px;
+}
+@media (max-width: 600px) {
+  header {
+    height: 196px;
+  }
+}
+header .nav-container {
+  margin-bottom: 100px;
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 20px;
+  background-color: #fff;
+}
+header .nav-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+header .nav-container li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  color: red;
+}
+@media (max-width: 600px) {
+  header .nav-container li {
+    display: none;
+  }
+}
+header .nav-container .hamburger-menu {
+  width: 100vw;
+  display: none;
+  margin-right: 30px;
+}
+@media (max-width: 600px) {
+  header .nav-container .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+}
+header .nav-container .hamburger-menu span {
+  background-color: red;
+  width: 40px;
+  height: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+header .nav-container .nav-bar ul {
+  gap: 150px;
+  margin-right: 3px;
+}
+@media (max-width: 915px) {
+  header .nav-container .nav-bar ul {
+    gap: 70px;
+  }
+}
+header .nav-container a {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+header .nav-container .nav-bar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+header .nav-container .nav-bar a:hover::before {
+  width: 100%;
+}
+header .nav-container .nav-bar a:hover {
+  color: #ff0000;
+}
+header .nav-container button:hover {
+  color: #ff0000;
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+header .nav-container button {
+  outline: none;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 20px;
+  font-family: "Caveat", cursive;
+  background: #000000;
+  width: 100px;
+  color: #ffffff;
+  z-index: 1;
+  -webkit-transition: all ease-in-out 1s;
+  -o-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
+}
+@media (max-width: 460px) {
+  header .nav-container button {
+    font-size: 20px;
+    width: 70px;
+    padding: 0px;
+  }
+}
+header .lang-menu {
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  position: relative;
+  top: -220px;
+  left: 15px;
+}
+@media (max-width: 600px) {
+  header .lang-menu {
+    top: -290px;
+    left: 0px;
+  }
+}
+@media (max-width: 460px) {
+  header .lang-menu {
+    top: -282px;
+  }
+}
+header .lang-menu .selected-lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  line-height: 2;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  header .lang-menu .selected-lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+header .lang-menu .selected-lang:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://flagsapi.com/GE/flat/64.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .lang-menu ul {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+  header .lang-menu ul {
+    width: 80px;
+  }
+}
+header .lang-menu ul li {
+  list-style: none;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+header .lang-menu ul li a {
+  text-decoration: none;
+  width: 125px;
+  padding: 5px 10px;
+  display: block;
+}
+header .lang-menu ul li:hover {
+  background-color: #f2f2f2;
+}
+header .lang-menu ul li a:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 600px) {
+  header .lang-menu ul li a:before {
+    width: 20px;
+  }
+}
+header .de:before {
+  background-image: url(https://flagsapi.com/DE/flat/64.png);
+}
+header .en:before {
+  background-image: url(https://flagsapi.com/US/flat/64.png);
+}
+header .fr:before {
+  background-image: url(https://flagsapi.com/FR/flat/64.png);
+}
+header .lang-menu:hover ul {
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+main .home-sec-background {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag-map_of_Georgia.svg/1024px-Flag-map_of_Georgia.svg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 517px;
+  margin-bottom: 50px;
+}
+main .home-sec-background .home-slogan:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+@media (max-width: 1020px) {
+  main .home-sec-background {
+    background-size: 900px;
+  }
+}
+@media (max-width: 920px) {
+  main .home-sec-background {
+    background-size: 800px;
+  }
+}
+@media (max-width: 820px) {
+  main .home-sec-background {
+    background-size: 700px;
+    height: 375px;
+  }
+}
+@media (max-width: 722px) {
+  main .home-sec-background {
+    background-size: 100vw;
+  }
+}
+main .home-slogan {
+  width: auto;
+  height: 516px;
+  font-size: 90px;
+  text-align: center;
+  font-family: "Caveat", sans-serif;
+  mix-blend-mode: hard-light;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+@media (max-width: 820px) {
+  main .home-slogan {
+    font-size: 70px;
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  main .home-slogan {
+    font-size: 65px;
+  }
+}
+@media (max-width: 460px) {
+  main .home-slogan {
+    font-size: 60px;
+  }
+}
+@media (max-width: 400px) {
+  main .home-slogan {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1120px) {
+  main .home-slogan h2 {
+    width: 900px;
+  }
+}
+@media (max-width: 980px) {
+  main .home-slogan h2 {
+    width: 800px;
+  }
+}
+@media (max-width: 820px) {
+  main .home-slogan h2 {
+    width: 580px;
+  }
+}
+@media (max-width: 600px) {
+  main .home-slogan h2 {
+    width: 422px;
+  }
+}
+@media (max-width: 460px) {
+  main .home-slogan h2 {
+    width: 331px;
+  }
+}
+@media (max-width: 400px) {
+  main .home-slogan h2 {
+    width: 300px;
+  }
+}
+main .home-instruction {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 100px;
+}
+main .home-instruction h4 {
+  font-family: "Caveat", sans-serif;
+  font-size: 100px;
+}
+main .home-instruction h2 {
+  font-size: 35px;
+  color: #000000;
+  font-family: "Caveat", sans-serif;
+  margin-bottom: 30px;
+}
+@media (max-width: 400px) {
+  main .home-instruction h2 {
+    font-size: 29px;
+  }
+}
+main .home-instruction .instruction-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+main .home-instruction .option-card {
+  width: 310px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+main .home-instruction .option-card h3 {
+  font-size: 60px;
+  font-family: "Caveat", sans-serif;
+  color: red;
+}
+main .home-instruction .option-card p {
+  font-size: 20px;
+  color: #616161;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  width: 281px;
+}
+main .home-instruction .option-card-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 150px;
+}
+@media (max-width: 1260px) {
+  main .home-instruction .option-card-flex {
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+main .home-instruction .option-card-flex .option-card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+main .galleryofgeorgia {
+  font-size: 60px;
+  font-family: "Caveat", sans-serif;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  gap: 30px;
+}
+@media (max-width: 445px) {
+  main .galleryofgeorgia h2 {
+    font-size: 40px;
+  }
+}
+main .galleryofgeorgia h2 {
+  margin-bottom: 50px;
+}
+main .red-arrow {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+main .stats-arrow {
+  font-size: 70px;
+  font-family: "Caveat", sans-serif;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  gap: 30px;
+}
+@media (max-width: 600px) {
+  main .stats-arrow h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 445px) {
+  main .stats-arrow h2 {
+    font-size: 30px;
+  }
+}
+main .stats-arrow h2 {
+  margin-bottom: 50px;
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-2160px);
+    transform: translateX(-2160px);
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-2160px);
+    transform: translateX(-2160px);
+  }
+}
+main .slider-sec .slider {
+  background: white;
+  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+main .slider-sec .slider::before, main .slider-sec .slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(left, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+main .slider-sec .slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotateZ(180deg);
+}
+main .slider-sec .slider::before {
+  left: 0;
+  top: 0;
+}
+main .slider-sec .slider .slide-track {
+  -webkit-animation: scroll 30s linear infinite;
+  animation: scroll 30s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3500px;
+  gap: 100px;
+}
+main .slider-sec .slider .slide {
+  height: 100px;
+  width: 250px;
+}
+main .stats-card .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+@media (max-width: 1230px) {
+  main .stats-card .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
+main .widget-card:hover {
+  -webkit-transform: scale(1, 1.1);
+  -ms-transform: scale(1, 1.1);
+  transform: scale(1, 1.1);
+}
+main .widget-card {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+main .stats-card .bg-info {
+  background-color: red !important;
+}
+main .stats-card h5 h5 {
+  font-family: "Caveat", sans-serif;
+}
+main .border-light {
+  border-color: rgba(255, 51, 71, 0.368627451) !important;
+}
+main .card-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+}
+main .slider-sec {
+  margin-bottom: 150px;
+}
+
+footer {
+  background: rgb(244, 225, 225);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(244, 225, 225)), color-stop(50%, rgba(255, 255, 255, 0)), to(rgb(244, 225, 225)));
+  background: -o-linear-gradient(bottom, rgb(244, 225, 225) 0%, rgba(255, 255, 255, 0) 50%, rgb(244, 225, 225) 100%);
+  background: linear-gradient(0deg, rgb(244, 225, 225) 0%, rgba(255, 255, 255, 0) 50%, rgb(244, 225, 225) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 36px;
+  margin-top: 200px;
+  border-top: 2px solid black;
+}
+@media (max-width: 1311px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+footer .margin-left-right {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+footer .f-left-div h2 {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29.9px;
+}
+footer .f-left-div p {
+  width: 295px;
+  height: 80px;
+  color: #99999a;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 19.55px;
+}
+footer .f-left-div {
+  margin-right: 50px;
+}
+@media (max-width: 676px) {
+  footer .f-left-div {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 600px) {
+  footer .f-left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+footer .f-right-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 635px;
+  gap: 20px;
+}
+@media (max-width: 1311px) {
+  footer .f-right-div {
+    width: 1000px;
+  }
+}
+@media (max-width: 676px) {
+  footer .f-right-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}
+footer .f-right-div h2 {
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 24.15px;
+  margin-bottom: 32px;
+  font-family: "Caveat", sans-serif;
+}
+footer .f-right-div li {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 19.55px;
+  font-family: "Oswald", sans-serif;
+}
+footer .f-right-div li {
+  line-height: 28px;
+}
+footer .f-right-div i {
+  margin-right: 15px;
+}
+footer .f-right-div a {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+footer .f-right-div li::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+footer .f-right-div li::before a {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+footer .f-right-div li:hover::before {
+  width: 100%;
+}
+footer .f-right-div li:hover {
+  color: #ff0000;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.registration-form {
+  font-family: "Open Sans", sans-serif;
+  color: #3a3c47;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media (max-width: 400px) {
+  .registration-form {
+    max-width: 95%;
+  }
+}
+.registration-form h2 {
+  font-size: 100px;
+  font-family: "Caveat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media (max-width: 632px) {
+  .registration-form h2 {
+    font-size: 50px;
+  }
+}
+.registration-form h2 span {
+  color: red;
+}
+.registration-form h1 {
+  margin-top: 48px;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  color: rgb(255, 0, 0);
+}
+.registration-form #username, .registration-form #email, .registration-form #phone, .registration-form #password {
+  font-family: Caveat;
+  font-size: 25px;
+  font-weight: 700;
+  color: red;
+}
+.registration-form .input-field select {
+  width: 170px;
+  margin-bottom: 20px;
+}
+.registration-form form {
+  background: #fff;
+  max-width: 100%;
+  width: 90%;
+  padding: 58px 44px;
+  border: 1px solid rgba(255, 0, 0, 0.337254902);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.411);
+  box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.411);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.registration-form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.registration-form .row label {
+  font-size: 13px;
+  color: #8086a9;
+}
+.registration-form .row input {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.1568627451);
+  border-radius: 4px;
+  font-size: 16px;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.registration-form .row input:focus {
+  outline: none;
+  -webkit-box-shadow: inset 2px 2px 5px 0 rgb(255, 0, 0);
+  box-shadow: inset 2px 2px 5px 0 rgb(255, 0, 0);
+}
+.registration-form .row input::-webkit-input-placeholder {
+  color: #C8CDDF;
+}
+.registration-form .row input::-moz-placeholder {
+  color: #C8CDDF;
+}
+.registration-form .row input:-ms-input-placeholder {
+  color: #C8CDDF;
+}
+.registration-form .row input::-ms-input-placeholder {
+  color: #C8CDDF;
+}
+.registration-form .row input::placeholder {
+  color: #C8CDDF;
+}
+.registration-form .checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.registration-form .checkbox-container label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.registration-form .checkbox-container input[type=checkbox] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+.registration-form .checkbox-container label::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 0.15em;
+  margin-right: 0.5em;
+  border: 0.05em solid black;
+}
+.registration-form .checkbox-container label:hover::before,
+.registration-form .checkbox-container input[type=checkbox]:hover + label::before {
+  background-color: rgba(0, 255, 106, 0.2039215686);
+}
+.registration-form .checkbox-container input[type=checkbox]:disabled + label,
+.registration-form .checkbox-container input[type=checkbox]:disabled {
+  color: #aaa;
+  cursor: default;
+}
+.registration-form .checkbox-container input[type=checkbox]:checked + label::before {
+  content: "✔";
+  background-color: #27AE60;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+.registration-form .checkbox-container input[type=checkbox]:disabled + label::before {
+  background-color: #ccc;
+  border-color: #999;
+}
+.registration-form .shelter-icon-gap label {
+  gap: 10px;
+}
+.registration-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background: #c31515;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 15px;
+  -webkit-transition: background 0.5s ease-out;
+  -o-transition: background 0.5s ease-out;
+  transition: background 0.5s ease-out;
+}
+.registration-form button:hover {
+  background: #55D3AC;
+}
+.registration-form p {
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.registration-form p:hover {
+  color: rgba(255, 0, 0, 0.452);
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.contact-page-header {
+  margin-bottom: 0px;
+}
+
+.contact-page h2 {
+  margin: 0;
+  color: #ff0000;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 3rem;
+  font-family: "Caveat", sans-serif;
+}
+.contact-page form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.contact-page form label {
+  font-size: 1.5rem;
+  font-family: "Caveat", sans-serif;
+  margin-bottom: 5px;
+}
+.contact-page input, .contact-page textarea, .contact-page button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  border-radius: 30px;
+}
+.contact-page input[type=text], .contact-page input[type=email], .contact-page textarea {
+  margin: 0 0 1em;
+  border: 2px solid rgba(255, 0, 0, 0.2392156863);
+  outline: none;
+}
+.contact-page textarea {
+  height: 10em;
+}
+.contact-page input[type=submit], .contact-page button {
+  background: #640101;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.contact-page input[type=submit]:hover, .contact-page button:hover {
+  background: #55D3AC;
+}
+.contact-page ul {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+.contact-page li {
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+.contact-page .contact-page-info {
+  margin-bottom: 100px;
+}
+.contact-page .contact-page .red-arrow {
+  margin-bottom: 100px;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.about-page {
+  background: rgb(244, 225, 225);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(244, 225, 225)), color-stop(50%, rgba(255, 255, 255, 0)), to(rgb(244, 225, 225)));
+  background: -o-linear-gradient(bottom, rgb(244, 225, 225) 0%, rgba(255, 255, 255, 0) 50%, rgb(244, 225, 225) 100%);
+  background: linear-gradient(0deg, rgb(244, 225, 225) 0%, rgba(255, 255, 255, 0) 50%, rgb(244, 225, 225) 100%);
+}
+.about-page h5 {
+  color: black;
+  font-size: 100px;
+  font-family: "Caveat", sans-serif;
+  margin-top: 100px;
+}
+@media (max-width: 490px) {
+  .about-page h5 {
+    font-size: 69px;
+  }
+}
+.about-page h5 span {
+  color: red;
+}
+.about-page .red-arrow {
+  margin-bottom: 30px;
+}
+.about-page .we-are-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 900px;
+}
+@media screen and (max-width: 860px) {
+  .about-page .we-are-block {
+    height: 2200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-page .we-are-block {
+    height: 2300px;
+  }
+}
+.about-page #about-us-section {
+  background: rgba(255, 0, 0, 0.231372549);
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 100px;
+}
+@media screen and (max-width: 860px) {
+  .about-page #about-us-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 60%;
+  }
+}
+.about-page .about-us-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 860px) {
+  .about-page .about-us-image {
+    position: relative;
+    width: 100%;
+    height: 45%;
+  }
+}
+.about-page .about-us-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+  margin-right: 750px;
+  z-index: 2;
+  border-radius: 100px;
+}
+.about-page .about-us-info p {
+  line-height: 25px;
+  font-family: "Oswald";
+}
+.about-page .about-us-info span {
+  color: red;
+}
+@media screen and (max-width: 1353px) {
+  .about-page .about-us-info {
+    margin-right: 400px;
+    width: 70%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 25px 0px 0px;
+  }
+}
+@media screen and (max-width: 1238px) {
+  .about-page .about-us-info {
+    margin-right: 229px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1111px) {
+  .about-page .about-us-info {
+    margin-right: 229px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .about-page .about-us-info {
+    margin-right: 229px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .about-page .about-us-info {
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 20px 0px 20px !important;
+    width: 100%;
+    height: 55%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 747px) {
+  .about-page .about-us-info {
+    height: 63%;
+  }
+}
+.about-page .about-us-info h2 {
+  color: black;
+  font-size: 40pt;
+  text-align: right;
+  font-family: "Oswald", sans-serif;
+}
+@media screen and (max-width: 860px) {
+  .about-page .about-us-info h2 {
+    text-align: center;
+  }
+}
+.about-page .about-us-info p {
+  color: white;
+  font-size: 14pt;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 1600px) {
+  .about-page .about-us-info p {
+    width: 95%;
+  }
+}
+@media (max-width: 400px) {
+  .about-page .about-us-info p {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .about-page .about-us-info p {
+    text-align: center;
+  }
+}
+.about-page .about-us-info a {
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+  width: 180px;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  font-size: 20px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.596) 0px 20px 30px -10px;
+  box-shadow: rgba(255, 255, 255, 0.596) 0px 20px 30px -10px;
+  font-family: "Oswald", sans-serif;
+}
+.about-page .about-us-info a:hover {
+  background: #000000;
+  color: white;
+  -webkit-box-shadow: rgba(255, 0, 0, 0.623) 0px 22px 70px 4px;
+  box-shadow: rgba(255, 0, 0, 0.623) 0px 22px 70px 4px;
+}
+.about-page h4 {
+  color: black;
+  font-size: 60px;
+  font-family: "Caveat", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media (max-width: 490px) {
+  .about-page h4 {
+    font-size: 69px;
+  }
+}
+
+.body-about-page footer {
+  margin-top: 0px;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.services-main .find-your-shelter {
+  font-size: 100px;
+  font-family: "Caveat", sans-serif;
+  margin-top: 100px;
+}
+@media (max-width: 882px) {
+  .services-main .find-your-shelter {
+    font-size: 60px;
+  }
+}
+@media (max-width: 535px) {
+  .services-main .find-your-shelter {
+    font-size: 45px;
+  }
+}
+@media (max-width: 405px) {
+  .services-main .find-your-shelter {
+    font-size: 37px;
+  }
+}
+.services-main .d-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .services-main .col-lg-4 {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .services-main .col-xl-4 {
+    width: unset;
+  }
+}
+@media (min-width: 1200px) {
+  .services-main .container-xl {
+    max-width: 1248px;
+  }
+}
+.services-main .row-grid img {
+  margin-bottom: unset;
+}
+@media (max-width: 767px) {
+  .services-main .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .services-main .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.services-main .card-link {
+  color: red;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+.services-main .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.services-main .card-body:hover {
+  background-color: black;
+}
+.services-main .col-xl-4 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 50px;
+}
+.services-main .col-xl-4:hover {
+  -webkit-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+}
+.services-main .card-title {
+  font-size: 25px;
+  font-family: "geoFont";
+  color: rgb(21, 255, 0);
+}
+.services-main .free {
+  color: red;
+}
+.services-main .details-button {
+  border: none;
+  background-color: black;
+  color: rgb(255, 0, 0);
+  font-family: "Oswald", sans-serif;
+}
+.services-main .card {
+  background-color: rgba(255, 4, 4, 0.0509803922);
+}
+.services-main .list-group-item {
+  background-color: rgba(255, 4, 4, 0.0509803922);
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+}
+.services-main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.search {
+  border: 2px solid red;
+  overflow: auto;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.search input[type=text] {
+  border: 0px;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.search input[type=text]:focus {
+  outline: 0;
+}
+
+.search input[type=submit] {
+  border: 0px;
+  background: none;
+  background-color: red;
+  color: #fff;
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
+
+.search input[type=submit]:hover {
+  color: black;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1030;
+}
+
+.search-section {
+  padding: 50px 0;
+}
+
+.filter-header {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.filter-title {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 14px;
+  margin-bottom: 15px;
+  color: rgb(255, 0, 0);
+  font-family: "Caveat", sans-serif;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+  color: red;
+  font-family: "Caveat", sans-serif;
+}
+
+.font-semibold {
+  color: red;
+  font-family: "Oswald", sans-serif;
+}
+
+.custom-control-label {
+  font-family: Caveat;
+  font-size: 20px;
+}
+
+.d-md-none {
+  color: red;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.row-grid img {
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .filters-actions {
+    position: fixed;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 0;
+    bottom: 0;
+    z-index: 1031;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.21);
+    height: 50px;
+  }
+  .filters-actions > div {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+  }
+  .filters-actions > div:first-of-type {
+    border-right: 1px solid #d6d1ce;
+  }
+  .filters-actions > div > * {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .filter-btn, .filter-btn:hover, .filter-btn:focus, .filter-btn:active {
+    padding: 14px 20px;
+    height: 50px;
+    border: 0;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    border-radius: 0;
+  }
+  .sort-drop .dropdown-menu {
+    width: 100%;
+    left: 0;
+    position: fixed !important;
+    -webkit-transform: translateY(100%) !important;
+    -ms-transform: translateY(100%) !important;
+    transform: translateY(100%) !important;
+    bottom: 50px !important;
+    top: auto !important;
+    text-align: center;
+    border-radius: 6px 6px 0 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
+    z-index: -11;
+  }
+  .sort-drop .dropdown-menu .dropdown-item {
+    padding: 15px 20px !important;
+  }
+  .sort-drop .dropdown-menu .dropdown-item:first-child {
+    border-radius: 6px 6px 0 0 !important;
+  }
+  .sort-drop.show .dropdown-menu {
+    -webkit-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+  }
+  .btn.sort-toggle {
+    background-image: none;
+    padding: 10px !important;
+    width: 100%;
+    border: 0;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .sidebar {
+    position: fixed;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #fff;
+  }
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.news-main .news-h2 {
+  font-size: 100px;
+  font-family: "Caveat", sans-serif;
+  margin-top: 100px;
+}
+@media (max-width: 882px) {
+  .news-main .news-h2 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 535px) {
+  .news-main .news-h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 405px) {
+  .news-main .news-h2 {
+    font-size: 37px;
+  }
+}
+.news-main .red-arrow {
+  margin-bottom: 100px;
+  border: none;
+}
+.news-main .header h1 {
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+}
+.news-main .news img, .news-main .sidebar img {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.news-main .articlecontent {
+  padding: 1rem;
+}
+.news-main .articlecontent h2 {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  color: red;
+  margin-bottom: 10px;
+}
+.news-main .article {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  background-color: rgba(255, 0, 0, 0.267);
+  border-radius: 50px;
+}
+.news-main .pins {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 0, 0, 0.267);
+  border-radius: 50px;
+}
+.news-main .footer {
+  background-color: rgba(0, 0, 0, 0.96);
+  color: white;
+}
+.news-main .footer .bottomlinks {
+  text-align: left;
+}
+.news-main .header {
+  background-color: rgb(255, 0, 0);
+  margin-bottom: 1rem;
+  border-radius: 50px;
+}
+.news-main img {
+  max-width: 100%;
+  border: 3px solid black;
+}
+.news-main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.news-main .header {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+.news-main .footer {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.news-main .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.news-main .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 520px) {
+  .news-main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 521px) and (max-width: 830px) {
+  .news-main .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .news-main .news {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    margin-right: 1rem;
+  }
+  .news-main .sidebar {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+@media screen and (min-width: 831px) {
+  .news-main .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .news-main .news {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    margin-right: 1rem;
+  }
+  .news-main .sidebar {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .news-main .big {
+    width: 100%;
+  }
+  .news-main .big p {
+    color: white;
+    font-family: "Oswald", sans-serif;
+  }
+  .news-main .medium {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+  .news-main .medium p {
+    color: white;
+    font-family: "Oswald", sans-serif;
+  }
+  .news-main .small {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+.news-main .pins h2 {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  color: red;
+}
+.news-main .pins p {
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.sign-in-styles {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */
